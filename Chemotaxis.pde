@@ -11,7 +11,7 @@ void setup()
 }
 void draw()
 {
-    background(0); 
+    background(255); 
     for (int i = 0; i < bob.length; i++)
     {
         bob[i].walk();
@@ -47,8 +47,9 @@ class Walker
     }
     void show()
     {
+      noStroke();
         fill(x,y,z);
-        ellipse(myX, myY, 3,3);
+        ellipse(myX, myY, 2,2);
     }
     
 }
